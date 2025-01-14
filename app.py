@@ -8,3 +8,6 @@ app = Flask(__name__)
 def index():
     remote_ip = request.remote_addr
     return jsonify({'ip': request.remote_addr}), 200
+
+if __name__ == "__main__":
+    app.run()
